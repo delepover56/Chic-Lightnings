@@ -598,6 +598,36 @@ h3 {
     overflow-x: clip;
 }
 
+.breadcrumb {
+    width: min(100%, var(--content-max));
+    max-width: calc(100vw - 40px);
+    margin: clamp(28px, 4vw, 52px) auto 0;
+    padding: 0 var(--page-gutter);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    color: #806d57;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.breadcrumb a {
+    color: #9c6100;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover,
+.breadcrumb a:focus-visible {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.breadcrumb span::before {
+    content: "/";
+    margin-right: 8px;
+    color: #b49b7d;
+}
+
 .section + .section {
     padding-top: clamp(16px, 2.4vw, 34px);
 }

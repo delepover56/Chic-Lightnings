@@ -64,12 +64,7 @@
                        "publisher":  {
                                          "@id":  "https://chiclighting.vercel.app/#organization"
                                      },
-                       "inLanguage":  "en",
-                       "potentialAction":  {
-                                               "@type":  "SearchAction",
-                                               "target":  "https://chiclighting.vercel.app/Pages/Search.html?q={search_term_string}",
-                                               "query-input":  "required name=search_term_string"
-                                           }
+                       "inLanguage":  "en"
                    },
                    {
                        "@type":  "BreadcrumbList",
@@ -84,6 +79,12 @@
                                                {
                                                    "@type":  "ListItem",
                                                    "position":  2,
+                                                   "name":  "Products",
+                                                   "item":  "https://chiclighting.vercel.app/#collections"
+                                               },
+                                               {
+                                                   "@type":  "ListItem",
+                                                   "position":  3,
                                                    "name":  "Ceiling Lights",
                                                    "item":  "https://chiclighting.vercel.app/products/ceiling-lights"
                                                }
@@ -141,6 +142,11 @@
             </div>
         </header>
         <main>
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="../../index.html">Home</a>
+                <span>Products</span>
+                <span aria-current="page">Ceiling Lights</span>
+            </nav>
             <section class="section catalog-section">
                 <div class="page-hero reveal">
                     <div class="section-heading">
@@ -171,6 +177,8 @@
                 <div class="section-heading reveal">
                     <p class="eyebrow">Ceiling planning</p>
                     <h2>Keep daily lighting bright, even, and easy to live with.</h2>
+                    <p>Ceiling lights are the foundation of practical indoor lighting because they provide the main layer of brightness for bedrooms, corridors, kitchens, offices, compact rooms, and commercial interiors. Chic Lighting offers home decor lights that balance clean design with daily usability, including flush ceiling lights, panel styles, dome fixtures, and modern LED lighting options. The best ceiling fixture should spread light evenly, reduce glare, suit the ceiling height, and remain easy to maintain over time.</p>
+                    <p>Use ceiling lights to create reliable coverage, then add decorative layers where the room needs mood or focus. Pair <a href="./Lamps.html">modern lamps for softer ambience</a> with ceiling fixtures in bedrooms and lounges, choose <a href="./Chandeliers.html">chandeliers for statement indoor lighting</a> in formal spaces, or install <a href="./Wall-Lights.html">wall lights and sconces</a> where overhead lighting feels flat. This layered approach keeps LED lighting functional while allowing the overall decor to feel warmer and more considered.</p>
                 </div>
                 <div class="content-band">
                     <article class="value-card reveal">
@@ -222,6 +230,7 @@
     <script src="../../Script.min.js" defer></script>
 </body>
 </html>
+
 
 
 

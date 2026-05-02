@@ -194,7 +194,7 @@ function searchProducts(query) {
 }
 
 function searchPageUrl(query) {
-    return `${getRootPath()}Pages/Search.html?q=${encodeURIComponent(query.trim())}`;
+    return `${getRootPath()}Pages/Search.html#q=${encodeURIComponent(query.trim())}`;
 }
 
 function submitSearch(query) {
@@ -492,7 +492,10 @@ function setupSearchSuggestions() {
 function renderSearchResultsPage() {
     if (!searchResultsGrid) return;
 
-    const query = new URLSearchParams(window.location.search).get("q") || "";
+    const queryFromHash = window.location.hash.startsWith("#q=")
+        ? decodeURIComponent(window.location.hash.replace("#q=", ""))
+        : "";
+    const query = queryFromHash || new URLSearchParams(window.location.search).get("q") || "";
     const results = searchProducts(query);
 
     if (searchResultsTitle) {

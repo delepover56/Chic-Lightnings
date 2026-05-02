@@ -64,12 +64,7 @@
                        "publisher":  {
                                          "@id":  "https://chiclighting.vercel.app/#organization"
                                      },
-                       "inLanguage":  "en",
-                       "potentialAction":  {
-                                               "@type":  "SearchAction",
-                                               "target":  "https://chiclighting.vercel.app/Pages/Search.html?q={search_term_string}",
-                                               "query-input":  "required name=search_term_string"
-                                           }
+                       "inLanguage":  "en"
                    },
                    {
                        "@type":  "BreadcrumbList",
@@ -84,6 +79,12 @@
                                                {
                                                    "@type":  "ListItem",
                                                    "position":  2,
+                                                   "name":  "Products",
+                                                   "item":  "https://chiclighting.vercel.app/#collections"
+                                               },
+                                               {
+                                                   "@type":  "ListItem",
+                                                   "position":  3,
                                                    "name":  "Modern Lamps",
                                                    "item":  "https://chiclighting.vercel.app/products/lamps"
                                                }
@@ -141,6 +142,11 @@
             </div>
         </header>
         <main>
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="../../index.html">Home</a>
+                <span>Products</span>
+                <span aria-current="page">Lamps</span>
+            </nav>
             <section class="section catalog-section">
                 <div class="page-hero reveal">
                     <div class="section-heading">
@@ -171,6 +177,8 @@
                 <div class="section-heading reveal">
                     <p class="eyebrow">Lamp planning</p>
                     <h2>Choose warmth, height, and shade shape together.</h2>
+                    <p>Modern lamps are one of the most flexible indoor lighting choices because they add comfort exactly where people sit, read, work, or unwind. Chic Lighting offers home decor lights for bedrooms, lounges, console tables, hotel suites, and quiet corners where overhead brightness can feel too direct. When choosing table lamps or bedside lamps, compare shade width, base height, finish, and LED lighting temperature together. A warm bulb behind fabric creates a softer glow, while glass, brass, black, or textured bases can connect the fixture to nearby furniture and hardware.</p>
+                    <p>Use lamps as part of a complete lighting plan rather than as isolated accessories. Pair <a href="./Chandeliers.html">statement chandeliers for indoor lighting</a> with lamps for evening ambience, add <a href="./Ceiling-Lights.html">LED ceiling lights</a> for practical room coverage, or combine lamps with <a href="./Wall-Lights.html">decorative wall lights</a> to create depth around beds, mirrors, and artwork. This layered approach helps modern lamps support both style and daily function.</p>
                 </div>
                 <div class="content-band">
                     <article class="value-card reveal">
@@ -222,6 +230,7 @@
     <script src="../../Script.min.js" defer></script>
 </body>
 </html>
+
 
 
 

@@ -64,12 +64,7 @@
                        "publisher":  {
                                          "@id":  "https://chiclighting.vercel.app/#organization"
                                      },
-                       "inLanguage":  "en",
-                       "potentialAction":  {
-                                               "@type":  "SearchAction",
-                                               "target":  "https://chiclighting.vercel.app/Pages/Search.html?q={search_term_string}",
-                                               "query-input":  "required name=search_term_string"
-                                           }
+                       "inLanguage":  "en"
                    },
                    {
                        "@type":  "BreadcrumbList",
@@ -84,6 +79,12 @@
                                                {
                                                    "@type":  "ListItem",
                                                    "position":  2,
+                                                   "name":  "Products",
+                                                   "item":  "https://chiclighting.vercel.app/#collections"
+                                               },
+                                               {
+                                                   "@type":  "ListItem",
+                                                   "position":  3,
                                                    "name":  "Wall Lights",
                                                    "item":  "https://chiclighting.vercel.app/products/wall-lights"
                                                }
@@ -141,6 +142,11 @@
             </div>
         </header>
         <main>
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="../../index.html">Home</a>
+                <span>Products</span>
+                <span aria-current="page">Wall Lights</span>
+            </nav>
             <section class="section catalog-section">
                 <div class="page-hero reveal">
                     <div class="section-heading">
@@ -171,6 +177,8 @@
                 <div class="section-heading reveal">
                     <p class="eyebrow">Wall light planning</p>
                     <h2>Use wall lights where overhead light feels too flat.</h2>
+                    <p>Wall lights add direction, rhythm, and depth to indoor lighting plans. They are especially useful in bedrooms, corridors, mirror areas, stair routes, dining rooms, and feature walls where overhead fixtures alone can make a room feel flat. Chic Lighting offers home decor lights such as sconces, warm wall fixtures, accent lights, and LED lighting styles that help guide movement, frame architectural details, and create a calmer evening glow without taking up table or floor space.</p>
+                    <p>Choose wall lights by considering mounting height, beam direction, finish, shade material, and nearby decor. Up-down beams can emphasize textured walls, warm glass can soften hallways, and paired sconces can make beds or mirrors feel more finished. For a complete scheme, combine <a href="./Ceiling-Lights.html">ceiling lights for general LED lighting</a> with <a href="./Lamps.html">modern lamps for task lighting</a> and <a href="./Chandeliers.html">chandeliers for statement indoor lighting</a>. The result is a layered home decor lights plan that looks intentional and works throughout the day.</p>
                 </div>
                 <div class="content-band">
                     <article class="value-card reveal">
@@ -222,6 +230,7 @@
     <script src="../../Script.min.js" defer></script>
 </body>
 </html>
+
 
 
 

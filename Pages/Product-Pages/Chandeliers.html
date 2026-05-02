@@ -64,12 +64,7 @@
                        "publisher":  {
                                          "@id":  "https://chiclighting.vercel.app/#organization"
                                      },
-                       "inLanguage":  "en",
-                       "potentialAction":  {
-                                               "@type":  "SearchAction",
-                                               "target":  "https://chiclighting.vercel.app/Pages/Search.html?q={search_term_string}",
-                                               "query-input":  "required name=search_term_string"
-                                           }
+                       "inLanguage":  "en"
                    },
                    {
                        "@type":  "BreadcrumbList",
@@ -84,6 +79,12 @@
                                                {
                                                    "@type":  "ListItem",
                                                    "position":  2,
+                                                   "name":  "Products",
+                                                   "item":  "https://chiclighting.vercel.app/#collections"
+                                               },
+                                               {
+                                                   "@type":  "ListItem",
+                                                   "position":  3,
                                                    "name":  "Chandeliers",
                                                    "item":  "https://chiclighting.vercel.app/products/chandeliers"
                                                }
@@ -141,6 +142,11 @@
             </div>
         </header>
         <main>
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="../../index.html">Home</a>
+                <span>Products</span>
+                <span aria-current="page">Chandeliers</span>
+            </nav>
             <section class="section catalog-section">
                 <div class="page-hero reveal">
                     <div class="section-heading">
@@ -171,6 +177,8 @@
                 <div class="section-heading reveal">
                     <p class="eyebrow">Chandelier planning</p>
                     <h2>Match scale, sparkle, and ceiling height before ordering.</h2>
+                    <p>Chandeliers are high-impact indoor lighting because they shape the first impression of a dining room, lounge, stairwell, reception area, or formal interior. The right chandelier should feel proportional to the room instead of simply decorative. Chic Lighting helps clients compare crystal chandeliers, brass chandelier styles, modern chandelier frames, and warm LED lighting options by ceiling height, table placement, room width, finish palette, and the amount of visual focus the space needs.</p>
+                    <p>A chandelier works best when it belongs to a broader home decor lights plan. Use <a href="./Lamps.html">modern lamps for warm layered lighting</a> beside seating, add <a href="./Wall-Lights.html">wall lights for depth and ambience</a> along nearby walls, and choose <a href="./Ceiling-Lights.html">ceiling lights for daily room brightness</a> where the chandelier is more decorative than functional. This mix keeps interiors flexible: bright enough for daily tasks, soft enough for evenings, and visually balanced from floor to ceiling.</p>
                 </div>
                 <div class="content-band">
                     <article class="value-card reveal">
@@ -222,6 +230,7 @@
     <script src="../../Script.min.js" defer></script>
 </body>
 </html>
+
 
 
 
