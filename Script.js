@@ -5,19 +5,19 @@ const categories = [
         products: [
             {
                 title: "Antique Wooden Lamp",
-                image: "./Pages/Product-Pages/Assets/Lamps/Lamp 1.jpeg",
+                image: "./Pages/Product-Pages/Assets/Lamps/lamp-1.jpeg",
                 detail: "Warm bedside lighting with a classic wooden profile.",
                 price: "$10"
             },
             {
                 title: "Beautiful Bedside Lamp Pair",
-                image: "./Pages/Product-Pages/Assets/Lamps/Lamp 2.jpg",
+                image: "./Pages/Product-Pages/Assets/Lamps/lamp-2.jpg",
                 detail: "Balanced pair for bedrooms, lounges, and suites.",
                 price: "$10"
             },
             {
                 title: "Black Traditional Lamp Set",
-                image: "./Pages/Product-Pages/Assets/Lamps/Lamp 3.jpeg",
+                image: "./Pages/Product-Pages/Assets/Lamps/lamp-3.jpeg",
                 detail: "A dark accent finish for calm evening interiors.",
                 price: "$10"
             }
@@ -29,19 +29,19 @@ const categories = [
         products: [
             {
                 title: "Contemporary Crystal Chandelier",
-                image: "./Pages/Product-Pages/Assets/Chandeliers/chandelier 1.jpg",
+                image: "./Pages/Product-Pages/Assets/Chandeliers/chandelier-1.jpg",
                 detail: "A polished centerpiece for formal interiors.",
                 price: "$10"
             },
             {
                 title: "Lindby Lumiel Five-Bulb",
-                image: "./Pages/Product-Pages/Assets/Chandeliers/chandelier 2.jpg",
+                image: "./Pages/Product-Pages/Assets/Chandeliers/chandelier-2.jpg",
                 detail: "Layered light for dining rooms and reception areas.",
                 price: "$10"
             },
             {
                 title: "Brass 8-Light Crystal Chandelier",
-                image: "./Pages/Product-Pages/Assets/Chandeliers/chandelier 4.jpeg",
+                image: "./Pages/Product-Pages/Assets/Chandeliers/chandelier-4.jpeg",
                 detail: "Warm brass detail with a bright crystal throw.",
                 price: "$10"
             }
@@ -53,19 +53,19 @@ const categories = [
         products: [
             {
                 title: "Acrylic Suction Dome Light",
-                image: "./Pages/Product-Pages/Assets/Ceiling-Lights/Ceiling Light 1.jpeg",
+                image: "./Pages/Product-Pages/Assets/Ceiling-Lights/ceiling-light-1.jpeg",
                 detail: "Low-profile LED lighting for daily use.",
                 price: "$10"
             },
             {
                 title: "Round Flat Panel Ceiling Light",
-                image: "./Pages/Product-Pages/Assets/Ceiling-Lights/Ceiling Light 2.jpeg",
+                image: "./Pages/Product-Pages/Assets/Ceiling-Lights/ceiling-light-2.jpeg",
                 detail: "Clean and efficient illumination for modern rooms.",
                 price: "$10"
             },
             {
                 title: "Citra Arc LED Ceiling Light",
-                image: "./Pages/Product-Pages/Assets/Ceiling-Lights/Ceiling Light 3.jpeg",
+                image: "./Pages/Product-Pages/Assets/Ceiling-Lights/ceiling-light-3.jpeg",
                 detail: "Warm white LED shape with sculptural movement.",
                 price: "$10"
             }
@@ -77,19 +77,19 @@ const categories = [
         products: [
             {
                 title: "Modern Wall Accent",
-                image: "./Pages/Product-Pages/Assets/Wall-Lights/Wall Light 1.jpg",
+                image: "./Pages/Product-Pages/Assets/Wall-Lights/wall-light-1.jpg",
                 detail: "Directional light for corridors and bedrooms.",
                 price: "$10"
             },
             {
                 title: "Warm Sconce Pair",
-                image: "./Pages/Product-Pages/Assets/Wall-Lights/Wall Light 2.jpg",
+                image: "./Pages/Product-Pages/Assets/Wall-Lights/wall-light-2.jpg",
                 detail: "Soft side lighting for layered interior schemes.",
                 price: "$10"
             },
             {
                 title: "Decorative Wall Fixture",
-                image: "./Pages/Product-Pages/Assets/Wall-Lights/Wall Light 3.jpg",
+                image: "./Pages/Product-Pages/Assets/Wall-Lights/wall-light-3.jpg",
                 detail: "Compact fixture with a refined decorative profile.",
                 price: "$10"
             }
@@ -99,28 +99,28 @@ const categories = [
 
 const catalogFiles = {
     "Lamps": [
-        "Lamp 1.jpeg", "Lamp 2.jpg", "Lamp 3.jpeg", "Lamp 4.jpg",
-        "Lamp 5.jpeg", "Lamp 6.jpg", "Lamp 7.jpg", "Lamp 8.jpg",
-        "Lamp 9.jpg", "Lamp 10.jpg", "Lamp 11.jpg", "Lamp 12.jpg",
-        "Lamp 13.jpg", "Lamp 14.jpg", "Lamp 15.jpeg", "Lamp 16.jpg"
+        "lamp-1.jpeg", "lamp-2.jpg", "lamp-3.jpeg", "lamp-4.jpg",
+        "lamp-5.jpeg", "lamp-6.jpg", "lamp-7.jpg", "lamp-8.jpg",
+        "lamp-9.jpg", "lamp-10.jpg", "lamp-11.jpg", "lamp-12.jpg",
+        "lamp-13.jpg", "lamp-14.jpg", "lamp-15.jpeg", "lamp-16.jpg"
     ],
     "Chandeliers": [
-        "chandelier 1.jpg", "chandelier 2.jpg", "chandelier 3.jpg", "chandelier 4.jpeg",
-        "chandelier 5.jpg", "chandelier 6.jpg", "chandelier 7.jpg", "chandelier 8.jpg",
-        "chandelier 9.jpg", "chandelier 10.jpg", "chandelier 11.jpg", "chandelier 12.jpg",
-        "chandelier 13.jpg", "chandelier 14.jpg", "chandelier 15.jpg", "chandelier 16.jpg"
+        "chandelier-1.jpg", "chandelier-2.jpg", "chandelier-3.jpg", "chandelier-4.jpeg",
+        "chandelier-5.jpg", "chandelier-6.jpg", "chandelier-7.jpg", "chandelier-8.jpg",
+        "chandelier-9.jpg", "chandelier-10.jpg", "chandelier-11.jpg", "chandelier-12.jpg",
+        "chandelier-13.jpg", "chandelier-14.jpg", "chandelier-15.jpg", "chandelier-16.jpg"
     ],
     "Ceiling Lights": [
-        "Ceiling Light 1.jpeg", "Ceiling Light 2.jpeg", "Ceiling Light 3.jpeg", "Ceiling Light 4.jpg",
-        "Ceiling Light 5.jpg", "Ceiling Light 6.jpeg", "Ceiling Light 7.jpg", "Ceiling Light 8.jpg",
-        "Ceiling Light 9.jpg", "Ceiling Light 10.jpg", "Ceiling Light 11.jpg", "Ceiling Light 12.jpg",
-        "Ceiling Light 13.jpg", "Ceiling Light 14.jpg", "Ceiling Light 15.jpg", "Ceiling Light 16.jpg"
+        "ceiling-light-1.jpeg", "ceiling-light-2.jpeg", "ceiling-light-3.jpeg", "ceiling-light-4.jpg",
+        "ceiling-light-5.jpg", "ceiling-light-6.jpeg", "ceiling-light-7.jpg", "ceiling-light-8.jpg",
+        "ceiling-light-9.jpg", "ceiling-light-10.jpg", "ceiling-light-11.jpg", "ceiling-light-12.jpg",
+        "ceiling-light-13.jpg", "ceiling-light-14.jpg", "ceiling-light-15.jpg", "ceiling-light-16.jpg"
     ],
     "Wall Lights": [
-        "Wall Light 1.jpg", "Wall Light 2.jpg", "Wall Light 3.jpg", "Wall Light 4.jpeg",
-        "Wall Light 5.jpg", "Wall Light 6.jpg", "Wall Light 7.jpg", "Wall Light 8.jpg",
-        "Wall Light 9.jpg", "Wall Light 10.jpg", "Wall Light 11.jpeg", "Wall Light 12.jpg",
-        "Wall Light 13.jpg", "Wall Light 14.jpg", "Wall Light 15.jpg", "Wall Light 16.jpg"
+        "wall-light-1.jpg", "wall-light-2.jpg", "wall-light-3.jpg", "wall-light-4.jpeg",
+        "wall-light-5.jpg", "wall-light-6.jpg", "wall-light-7.jpg", "wall-light-8.jpg",
+        "wall-light-9.jpg", "wall-light-10.jpg", "wall-light-11.jpeg", "wall-light-12.jpg",
+        "wall-light-13.jpg", "wall-light-14.jpg", "wall-light-15.jpg", "wall-light-16.jpg"
     ]
 };
 
@@ -132,9 +132,97 @@ const productGrid = document.querySelector(".product-grid");
 const catalogGrid = document.querySelector(".catalog-grid");
 const form = document.querySelector(".contact-form");
 const formStatus = document.querySelector(".form-status");
+const searchResultsGrid = document.querySelector(".search-results-grid");
+const searchResultsTitle = document.querySelector("[data-search-title]");
+const searchResultsMeta = document.querySelector("[data-search-meta]");
 let productSwiper;
 let lightboxItems = [];
 let activeLightboxIndex = 0;
+
+function getRootPath() {
+    const path = window.location.pathname.replace(/\\/g, "/");
+    if (path.includes("/Pages/Product-Pages/")) return "../../";
+    if (path.includes("/Pages/")) return "../";
+    return "./";
+}
+
+function singularCategoryName(categoryName) {
+    return {
+        "Lamps": "Lamp",
+        "Chandeliers": "Chandelier",
+        "Ceiling Lights": "Ceiling Light",
+        "Wall Lights": "Wall Light"
+    }[categoryName] || categoryName.replace(/s$/, "");
+}
+
+function normalizeSearchText(value) {
+    return value.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+}
+
+function productCatalog() {
+    const root = getRootPath();
+    return Object.entries(catalogFiles).flatMap(([categoryName, files]) => {
+        const category = categories.find((item) => item.name === categoryName);
+        const folder = categoryName.replace(/\s+/g, "-");
+        const singular = singularCategoryName(categoryName);
+
+        return files.map((file, index) => {
+            const preview = category?.products[index];
+            const title = preview?.title || `${singular} Design ${index + 1}`;
+            return {
+                title,
+                category: categoryName,
+                image: `${root}Pages/Product-Pages/Assets/${folder}/${file}`,
+                href: `${root}Pages/Product-Pages/${folder}.html`,
+                detail: preview?.detail || `Finest quality ${categoryName.toLowerCase()} for refined interiors.`,
+                price: index < 3 ? "$10" : "$120",
+                keywords: normalizeSearchText(`${title} ${categoryName} ${singular} design ${index + 1} lighting light ${file}`)
+            };
+        });
+    });
+}
+
+function searchProducts(query) {
+    const normalizedQuery = normalizeSearchText(query);
+    if (!normalizedQuery) return [];
+
+    const terms = normalizedQuery.split(" ").filter(Boolean);
+    return productCatalog().filter((product) => {
+        if (product.keywords.includes(normalizedQuery)) return true;
+        return terms.every((term) => product.keywords.includes(term));
+    });
+}
+
+function searchPageUrl(query) {
+    return `${getRootPath()}Pages/Search.html?q=${encodeURIComponent(query.trim())}`;
+}
+
+function submitSearch(query) {
+    const cleanQuery = query.trim();
+    if (!cleanQuery) return;
+    window.location.href = searchPageUrl(cleanQuery);
+}
+
+function suggestionItems(query, limit = 6) {
+    const categoryMatches = categories
+        .filter((category) => normalizeSearchText(category.name).includes(normalizeSearchText(query)))
+        .map((category) => ({
+            label: category.name,
+            meta: "Collection",
+            query: category.name
+        }));
+
+    const productMatches = searchProducts(query)
+        .slice(0, limit)
+        .map((product) => ({
+            label: product.title,
+            meta: product.category,
+            query: product.title
+        }));
+
+    const unique = [...categoryMatches, ...productMatches];
+    return unique.filter((item, index) => unique.findIndex((match) => match.label === item.label) === index).slice(0, limit);
+}
 
 function setupMobileMenu() {
     if (!nav || !navLinks) return;
@@ -149,20 +237,13 @@ function setupMobileMenu() {
             <button type="submit" aria-label="Search">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m1.35-5.15a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0Z"/></svg>
             </button>
+            <div class="search-suggestions mobile-search-suggestions" role="listbox"></div>
         `;
         navLinks.prepend(search);
 
         search.addEventListener("submit", (event) => {
             event.preventDefault();
-            const query = search.querySelector("input").value.trim().toLowerCase();
-            if (!query) return;
-
-            const match = [...navLinks.querySelectorAll("a")]
-                .find((link) => link.textContent.trim().toLowerCase().includes(query));
-
-            if (match) {
-                window.location.href = match.href;
-            }
+            submitSearch(search.querySelector("input").value);
         });
     }
 
@@ -189,6 +270,7 @@ function setupMobileMenu() {
         const mobileActions = headerActions.cloneNode(true);
         mobileActions.classList.add("mobile-menu-actions");
         mobileActions.setAttribute("aria-label", "Mobile store actions");
+        mobileActions.querySelector('[aria-label="Search"]')?.remove();
         navLinks.append(mobileActions);
     }
 }
@@ -297,6 +379,140 @@ function renderCatalogPage() {
             </div>
         </article>
     `).join("");
+}
+
+function productResultCard(product) {
+    return `
+        <article class="product-card reveal">
+            <img src="${product.image}" alt="${product.title}">
+            <div class="product-body">
+                <div class="product-meta">
+                    <span>${product.category}</span>
+                    <span class="price">${product.price}</span>
+                </div>
+                <h3>${product.title}</h3>
+                <p>${product.detail}</p>
+                <div class="card-actions">
+                    <a class="btn mini" href="${getRootPath()}Pages/Contact-Us.html">Add to quote</a>
+                    <a class="text-link" href="${product.href}">View collection</a>
+                </div>
+            </div>
+        </article>
+    `;
+}
+
+function renderSuggestions(query, container) {
+    if (!container) return;
+
+    const cleanQuery = query.trim();
+    const suggestions = cleanQuery ? suggestionItems(cleanQuery) : [];
+    container.classList.toggle("active", suggestions.length > 0);
+    container.innerHTML = suggestions.map((suggestion) => `
+        <button type="button" class="search-suggestion" data-query="${suggestion.query}" role="option">
+            <span>${suggestion.label}</span>
+            <small>${suggestion.meta}</small>
+        </button>
+    `).join("");
+}
+
+function bindSearchForm(formElement) {
+    if (!formElement || formElement.dataset.searchBound === "true") return;
+
+    formElement.dataset.searchBound = "true";
+    const input = formElement.querySelector("input[type='search']");
+    const suggestions = formElement.querySelector(".search-suggestions");
+    if (!input) return;
+
+    input.addEventListener("input", () => renderSuggestions(input.value, suggestions));
+
+    suggestions?.addEventListener("click", (event) => {
+        const button = event.target.closest(".search-suggestion");
+        if (!button) return;
+        input.value = button.dataset.query || "";
+        submitSearch(input.value);
+    });
+
+    formElement.addEventListener("submit", (event) => {
+        event.preventDefault();
+        submitSearch(input.value);
+    });
+}
+
+function setupSearchOverlay() {
+    const overlay = document.createElement("div");
+    overlay.className = "search-overlay";
+    overlay.setAttribute("role", "dialog");
+    overlay.setAttribute("aria-modal", "true");
+    overlay.setAttribute("aria-label", "Search products");
+    overlay.innerHTML = `
+        <div class="search-panel">
+            <button class="search-close" type="button" aria-label="Close search">&times;</button>
+            <form class="overlay-search-form" role="search">
+                <label class="sr-only" for="overlay-search-input">Search products</label>
+                <input id="overlay-search-input" type="search" placeholder="Search lamps, chandeliers, wall lights..." autocomplete="off">
+                <button type="submit">Search</button>
+                <div class="search-suggestions overlay-search-suggestions" role="listbox"></div>
+            </form>
+        </div>
+    `;
+    document.body.appendChild(overlay);
+
+    const input = overlay.querySelector("input");
+    const closeButton = overlay.querySelector(".search-close");
+    bindSearchForm(overlay.querySelector("form"));
+
+    const closeOverlay = () => {
+        overlay.classList.remove("open");
+        document.body.classList.remove("search-open");
+    };
+
+    const openOverlay = () => {
+        overlay.classList.add("open");
+        document.body.classList.add("search-open");
+        window.setTimeout(() => input?.focus(), 40);
+    };
+
+    document.querySelectorAll('.header-actions button[aria-label="Search"]').forEach((button) => {
+        button.addEventListener("click", openOverlay);
+    });
+
+    closeButton.addEventListener("click", closeOverlay);
+    overlay.addEventListener("click", (event) => {
+        if (event.target === overlay) closeOverlay();
+    });
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && overlay.classList.contains("open")) closeOverlay();
+    });
+}
+
+function setupSearchSuggestions() {
+    document.querySelectorAll(".mobile-menu-search").forEach(bindSearchForm);
+}
+
+function renderSearchResultsPage() {
+    if (!searchResultsGrid) return;
+
+    const query = new URLSearchParams(window.location.search).get("q") || "";
+    const results = searchProducts(query);
+
+    if (searchResultsTitle) {
+        searchResultsTitle.textContent = query.trim() ? `Search results for "${query.trim()}"` : "Search products";
+    }
+
+    if (searchResultsMeta) {
+        searchResultsMeta.textContent = query.trim()
+            ? `${results.length} matching ${results.length === 1 ? "product" : "products"}.`
+            : "Use the search icon or mobile search drawer to find products.";
+    }
+
+    searchResultsGrid.innerHTML = results.length
+        ? results.map(productResultCard).join("")
+        : `<div class="empty-results reveal">
+            <h3>No matching products found.</h3>
+            <p>Try searching for lamps, chandeliers, ceiling lights, or wall lights.</p>
+        </div>`;
+
+    observeReveals();
 }
 
 function observeReveals() {
@@ -445,6 +661,9 @@ renderFilters();
 renderProducts();
 renderCatalogPage();
 setupMobileMenu();
+setupSearchOverlay();
+setupSearchSuggestions();
+renderSearchResultsPage();
 observeReveals();
 setupLightbox();
 setupExclusiveFaqs();
