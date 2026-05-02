@@ -126,6 +126,7 @@ const catalogFiles = {
 
 const nav = document.querySelector(".side-nav");
 const navToggle = document.querySelector(".nav-toggle");
+const navLinks = document.querySelector(".nav-links");
 const filterBar = document.querySelector(".filter-bar");
 const productGrid = document.querySelector(".product-grid");
 const catalogGrid = document.querySelector(".catalog-grid");
@@ -134,6 +135,63 @@ const formStatus = document.querySelector(".form-status");
 let productSwiper;
 let lightboxItems = [];
 let activeLightboxIndex = 0;
+
+function setupMobileMenu() {
+    if (!nav || !navLinks) return;
+
+    if (!navLinks.querySelector(".mobile-menu-search")) {
+        const search = document.createElement("form");
+        search.className = "mobile-menu-search";
+        search.setAttribute("role", "search");
+        search.innerHTML = `
+            <label class="sr-only" for="mobile-menu-search">Search lighting</label>
+            <input id="mobile-menu-search" type="search" placeholder="Search lighting">
+            <button type="submit" aria-label="Search">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m1.35-5.15a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0Z"/></svg>
+            </button>
+        `;
+        navLinks.prepend(search);
+
+        search.addEventListener("submit", (event) => {
+            event.preventDefault();
+            const query = search.querySelector("input").value.trim().toLowerCase();
+            if (!query) return;
+
+            const match = [...navLinks.querySelectorAll("a")]
+                .find((link) => link.textContent.trim().toLowerCase().includes(query));
+
+            if (match) {
+                window.location.href = match.href;
+            }
+        });
+    }
+
+    document.querySelectorAll(".has-menu").forEach((item) => {
+        if (item.querySelector(".submenu-toggle")) return;
+
+        const toggle = document.createElement("button");
+        toggle.className = "submenu-toggle";
+        toggle.type = "button";
+        toggle.setAttribute("aria-label", "Open collections menu");
+        toggle.setAttribute("aria-expanded", "false");
+        item.querySelector(":scope > a")?.after(toggle);
+
+        toggle.addEventListener("click", (event) => {
+            event.preventDefault();
+            event.stopPropagation();
+            const isOpen = item.classList.toggle("submenu-open");
+            toggle.setAttribute("aria-expanded", String(isOpen));
+        });
+    });
+
+    const headerActions = nav.querySelector(".header-actions");
+    if (headerActions && !navLinks.querySelector(".mobile-menu-actions")) {
+        const mobileActions = headerActions.cloneNode(true);
+        mobileActions.classList.add("mobile-menu-actions");
+        mobileActions.setAttribute("aria-label", "Mobile store actions");
+        navLinks.append(mobileActions);
+    }
+}
 
 function productCard(product, category) {
     return `
@@ -363,12 +421,14 @@ function updateActiveNav() {
 navToggle?.addEventListener("click", () => {
     const isOpen = nav.classList.toggle("open");
     navToggle.setAttribute("aria-expanded", String(isOpen));
+    document.body.classList.toggle("nav-open", isOpen);
 });
 
 document.querySelectorAll(".nav-links a").forEach((link) => {
     link.addEventListener("click", () => {
         nav.classList.remove("open");
         navToggle?.setAttribute("aria-expanded", "false");
+        document.body.classList.remove("nav-open");
     });
 });
 
@@ -384,6 +444,7 @@ form?.addEventListener("submit", (event) => {
 renderFilters();
 renderProducts();
 renderCatalogPage();
+setupMobileMenu();
 observeReveals();
 setupLightbox();
 setupExclusiveFaqs();

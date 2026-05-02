@@ -36,6 +36,18 @@ img {
     max-width: 100%;
 }
 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 a {
     color: inherit;
 }
@@ -133,6 +145,10 @@ select {
     transform: rotate(45deg) translateY(-2px);
 }
 
+.submenu-toggle {
+    display: none;
+}
+
 .submenu {
     position: absolute;
     top: calc(100% + 12px);
@@ -202,6 +218,11 @@ select {
     stroke-width: 2;
     stroke-linecap: round;
     stroke-linejoin: round;
+}
+
+.mobile-menu-search,
+.mobile-menu-actions {
+    display: none;
 }
 
 main {
@@ -1430,23 +1451,149 @@ h3 {
 
     .nav-links {
         position: fixed;
-        inset: 83px 16px auto 16px;
-        display: none;
-        padding: 14px;
+        top: 82px;
+        right: 0;
+        bottom: 0;
+        left: auto;
+        width: min(86vw, 360px);
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 22px 20px;
         background: rgba(13, 11, 8, 0.96);
+        backdrop-filter: blur(18px);
         border: 1px solid var(--line);
-        border-radius: var(--radius);
+        border-right: 0;
+        border-radius: var(--radius) 0 0 var(--radius);
         box-shadow: var(--shadow);
+        opacity: 0;
+        pointer-events: none;
+        transform: translateX(100%);
+        transition: opacity 180ms ease, transform 220ms ease;
     }
 
     .side-nav.open .nav-links {
-        display: grid;
-        align-items: stretch;
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateX(0);
     }
 
     .header-actions,
     .submenu {
         display: none;
+    }
+
+    body.nav-open {
+        overflow: hidden;
+    }
+
+    .mobile-menu-search {
+        position: relative;
+        display: block;
+        margin-bottom: 14px;
+    }
+
+    .mobile-menu-search input {
+        width: 100%;
+        min-height: 46px;
+        padding: 12px 48px 12px 14px;
+        color: var(--text);
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        outline: none;
+    }
+
+    .mobile-menu-search input::placeholder {
+        color: var(--muted);
+    }
+
+    .mobile-menu-search button {
+        position: absolute;
+        top: 50%;
+        right: 6px;
+        width: 34px;
+        height: 34px;
+        display: grid;
+        place-items: center;
+        color: var(--ink);
+        background: var(--gold);
+        border: 0;
+        border-radius: var(--radius);
+        transform: translateY(-50%);
+    }
+
+    .mobile-menu-search svg {
+        width: 18px;
+        height: 18px;
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+
+    .nav-links a,
+    .nav-item > a {
+        width: 100%;
+        min-height: 46px;
+        padding: 11px 12px;
+    }
+
+    .has-menu {
+        display: grid;
+        grid-template-columns: 1fr 46px;
+        align-items: center;
+    }
+
+    .has-menu > a::after {
+        content: none;
+    }
+
+    .submenu-toggle {
+        width: 46px;
+        height: 46px;
+        display: grid;
+        place-items: center;
+        color: var(--gold-2);
+        background: rgba(242, 169, 0, 0.12);
+        border: 1px solid rgba(242, 169, 0, 0.22);
+        border-radius: var(--radius);
+    }
+
+    .submenu-toggle::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-right: 2px solid currentColor;
+        border-bottom: 2px solid currentColor;
+        transform: rotate(45deg) translate(-2px, -2px);
+        transition: transform 180ms ease;
+    }
+
+    .has-menu.submenu-open .submenu-toggle::before {
+        transform: rotate(225deg) translate(-1px, -1px);
+    }
+
+    .has-menu.submenu-open .submenu {
+        grid-column: 1 / -1;
+        position: static;
+        display: grid;
+        min-width: 0;
+        margin: 4px 0 6px;
+        padding: 8px;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+    }
+
+    .mobile-menu-actions {
+        margin-top: auto;
+        padding-top: 18px;
+        display: flex !important;
+        justify-content: flex-start;
+        border-top: 1px solid var(--line);
     }
 
     .hero,
