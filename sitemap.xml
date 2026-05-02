@@ -1,97 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://chiclighting.vercel.app/</loc>
     <lastmod>2026-05-03</lastmod>
-    <image:image>
-      <image:loc>https://chiclighting.vercel.app/Assets/background-image.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://chiclighting.vercel.app/Assets/chic-lightings.jpg</image:loc>
-    </image:image>
   </url>
   <url>
     <loc>https://chiclighting.vercel.app/products/lamps</loc>
     <lastmod>2026-05-03</lastmod>
-    <image:image>
-      <image:loc>https://chiclighting.vercel.app/Pages/Product-Pages/Assets/Lamps/lamp-1.jpeg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://chiclighting.vercel.app/Pages/Product-Pages/Assets/Lamps/lamp-2.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://chiclighting.vercel.app/Pages/Product-Pages/Assets/Lamps/lamp-3.jpeg</image:loc>
-    </image:image>
   </url>
   <url>
     <loc>https://chiclighting.vercel.app/products/chandeliers</loc>
     <lastmod>2026-05-03</lastmod>
-    <image:image>
-      <image:loc>https://chiclighting.vercel.app/Pages/Product-Pages/Assets/Chandeliers/chandelier-1.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://chiclighting.vercel.app/Pages/Product-Pages/Assets/Chandeliers/chandelier-2.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://chiclighting.vercel.app/Pages/Product-Pages/Assets/Chandeliers/chandelier-4.jpeg</image:loc>
-    </image:image>
   </url>
   <url>
     <loc>https://chiclighting.vercel.app/products/ceiling-lights</loc>
     <lastmod>2026-05-03</lastmod>
-    <image:image>
-      <image:loc>https://chiclighting.vercel.app/Pages/Product-Pages/Assets/Ceiling-Lights/ceiling-light-1.jpeg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://chiclighting.vercel.app/Pages/Product-Pages/Assets/Ceiling-Lights/ceiling-light-2.jpeg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://chiclighting.vercel.app/Pages/Product-Pages/Assets/Ceiling-Lights/ceiling-light-3.jpeg</image:loc>
-    </image:image>
   </url>
   <url>
     <loc>https://chiclighting.vercel.app/products/wall-lights</loc>
     <lastmod>2026-05-03</lastmod>
-    <image:image>
-      <image:loc>https://chiclighting.vercel.app/Pages/Product-Pages/Assets/Wall-Lights/wall-light-1.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://chiclighting.vercel.app/Pages/Product-Pages/Assets/Wall-Lights/wall-light-2.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://chiclighting.vercel.app/Pages/Product-Pages/Assets/Wall-Lights/wall-light-3.jpg</image:loc>
-    </image:image>
   </url>
   <url>
     <loc>https://chiclighting.vercel.app/gallery</loc>
     <lastmod>2026-05-03</lastmod>
-    <image:image>
-      <image:loc>https://chiclighting.vercel.app/Assets/pexels-vecislavas-popa-1571457.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://chiclighting.vercel.app/Assets/faq-bg.jpg</image:loc>
-    </image:image>
   </url>
   <url>
     <loc>https://chiclighting.vercel.app/about</loc>
     <lastmod>2026-05-03</lastmod>
-    <image:image>
-      <image:loc>https://chiclighting.vercel.app/Assets/side-image-about-me.jpg</image:loc>
-    </image:image>
   </url>
   <url>
     <loc>https://chiclighting.vercel.app/contact</loc>
     <lastmod>2026-05-03</lastmod>
-    <image:image>
-      <image:loc>https://chiclighting.vercel.app/Assets/background-image.jpg</image:loc>
-    </image:image>
   </url>
   <url>
     <loc>https://chiclighting.vercel.app/faqs</loc>
     <lastmod>2026-05-03</lastmod>
-    <image:image>
-      <image:loc>https://chiclighting.vercel.app/Assets/faq-bg.jpg</image:loc>
-    </image:image>
   </url>
 </urlset>
