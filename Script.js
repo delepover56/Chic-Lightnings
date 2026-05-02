@@ -278,7 +278,7 @@ function setupMobileMenu() {
 function productCard(product, category) {
     return `
         <article class="product-card swiper-slide reveal">
-            <img src="${product.image}" alt="${product.title}">
+            <img src="${product.image}" alt="${product.title} indoor lighting by Chic Lighting" loading="lazy">
             <div class="product-body">
                 <div class="product-meta">
                     <span>${category.name}</span>
@@ -364,7 +364,7 @@ function renderCatalogPage() {
 
     catalogGrid.innerHTML = files.map((file, index) => `
         <article class="product-card reveal">
-            <img src="${prefix}${file}" alt="${category} design ${index + 1}">
+            <img src="${prefix}${file}" alt="${category} design ${index + 1} indoor lighting by Chic Lighting" loading="lazy">
             <div class="product-body">
                 <div class="product-meta">
                     <span>${category}</span>
@@ -384,7 +384,7 @@ function renderCatalogPage() {
 function productResultCard(product) {
     return `
         <article class="product-card reveal">
-            <img src="${product.image}" alt="${product.title}">
+            <img src="${product.image}" alt="${product.title} indoor lighting by Chic Lighting" loading="lazy">
             <div class="product-body">
                 <div class="product-meta">
                     <span>${product.category}</span>

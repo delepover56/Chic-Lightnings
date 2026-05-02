@@ -622,6 +622,7 @@ h3 {
     margin-right: auto;
 }
 
+.section-heading h1,
 .section-heading h2,
 .section-heading > p:not(.eyebrow) {
     max-width: 820px;

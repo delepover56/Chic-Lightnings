@@ -1,0 +1,35 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/about", "destination": "/Pages/About-Us.html" },
+    { "source": "/gallery", "destination": "/Pages/Gallery.html" },
+    { "source": "/contact", "destination": "/Pages/Contact-Us.html" },
+    { "source": "/faqs", "destination": "/Pages/FAQs.html" },
+    { "source": "/search", "destination": "/Pages/Search.html" },
+    { "source": "/products/lamps", "destination": "/Pages/Product-Pages/Lamps.html" },
+    { "source": "/products/chandeliers", "destination": "/Pages/Product-Pages/Chandeliers.html" },
+    { "source": "/products/ceiling-lights", "destination": "/Pages/Product-Pages/Ceiling-Lights.html" },
+    { "source": "/products/wall-lights", "destination": "/Pages/Product-Pages/Wall-Lights.html" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Robots-Tag", "value": "index, follow" }
+      ]
+    },
+    {
+      "source": "/Assets/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/Pages/Product-Pages/Assets/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    }
+  ]
+}

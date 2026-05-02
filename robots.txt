@@ -1,0 +1,5 @@
+﻿User-agent: *
+Allow: /
+
+Sitemap: https://chiclighting.vercel.app/sitemap.xml
+
