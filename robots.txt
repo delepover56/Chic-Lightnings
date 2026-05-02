@@ -4,4 +4,3 @@ Disallow: /search
 Disallow: /Pages/Search.html
 
 Sitemap: https://chiclighting.vercel.app/sitemap.xml
-Sitemap: https://chiclighting.vercel.app/sitemap-static.xml

@@ -598,34 +598,52 @@ h3 {
     overflow-x: clip;
 }
 
+main:has(> .breadcrumb) {
+    background: #f5ecdf;
+}
+
 .breadcrumb {
     width: min(100%, var(--content-max));
     max-width: calc(100vw - 40px);
-    margin: clamp(28px, 4vw, 52px) auto 0;
-    padding: 0 var(--page-gutter);
+    margin: 14px auto 0;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
-    color: #806d57;
-    font-size: 0.9rem;
-    font-weight: 700;
+    align-items: center;
+    gap: 6px;
+    color: #777;
+    background: transparent;
+    font-size: 0.88rem;
+    line-height: 1.4;
+    font-weight: 500;
 }
 
 .breadcrumb a {
-    color: #9c6100;
+    color: #8b8175;
     text-decoration: none;
 }
 
 .breadcrumb a:hover,
 .breadcrumb a:focus-visible {
+    color: var(--ink);
     text-decoration: underline;
     text-underline-offset: 4px;
 }
 
+.breadcrumb span {
+    color: #777;
+}
+
 .breadcrumb span::before {
     content: "/";
-    margin-right: 8px;
-    color: #b49b7d;
+    margin-right: 6px;
+    color: #b8aa99;
+    font-weight: 400;
+}
+
+.breadcrumb span[aria-current="page"] {
+    color: #3d3329;
+    font-weight: 700;
 }
 
 .section + .section {

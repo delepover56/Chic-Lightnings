@@ -1,6 +1,24 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    { "source": "/Pages/About-Us", "destination": "/about", "permanent": true },
+    { "source": "/Pages/About-Us.html", "destination": "/about", "permanent": true },
+    { "source": "/Pages/Gallery", "destination": "/gallery", "permanent": true },
+    { "source": "/Pages/Gallery.html", "destination": "/gallery", "permanent": true },
+    { "source": "/Pages/Contact-Us", "destination": "/contact", "permanent": true },
+    { "source": "/Pages/Contact-Us.html", "destination": "/contact", "permanent": true },
+    { "source": "/Pages/FAQs", "destination": "/faqs", "permanent": true },
+    { "source": "/Pages/FAQs.html", "destination": "/faqs", "permanent": true },
+    { "source": "/Pages/Product-Pages/Lamps", "destination": "/products/lamps", "permanent": true },
+    { "source": "/Pages/Product-Pages/Lamps.html", "destination": "/products/lamps", "permanent": true },
+    { "source": "/Pages/Product-Pages/Chandeliers", "destination": "/products/chandeliers", "permanent": true },
+    { "source": "/Pages/Product-Pages/Chandeliers.html", "destination": "/products/chandeliers", "permanent": true },
+    { "source": "/Pages/Product-Pages/Ceiling-Lights", "destination": "/products/ceiling-lights", "permanent": true },
+    { "source": "/Pages/Product-Pages/Ceiling-Lights.html", "destination": "/products/ceiling-lights", "permanent": true },
+    { "source": "/Pages/Product-Pages/Wall-Lights", "destination": "/products/wall-lights", "permanent": true },
+    { "source": "/Pages/Product-Pages/Wall-Lights.html", "destination": "/products/wall-lights", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/about", "destination": "/Pages/About-Us.html" },
     { "source": "/gallery", "destination": "/Pages/Gallery.html" },
@@ -10,17 +28,13 @@
     { "source": "/products/lamps", "destination": "/Pages/Product-Pages/Lamps.html" },
     { "source": "/products/chandeliers", "destination": "/Pages/Product-Pages/Chandeliers.html" },
     { "source": "/products/ceiling-lights", "destination": "/Pages/Product-Pages/Ceiling-Lights.html" },
-    { "source": "/products/wall-lights", "destination": "/Pages/Product-Pages/Wall-Lights.html" }
+    { "source": "/products/wall-lights", "destination": "/Pages/Product-Pages/Wall-Lights.html" },
+    { "source": "/product-assets/:path*", "destination": "/Pages/Product-Pages/Assets/:path*" },
+    { "source": "/product-pdfs/:path*", "destination": "/Pages/Product-Pages/Pdfs/:path*" }
   ],
   "headers": [
     {
       "source": "/sitemap.xml",
-      "headers": [
-        { "key": "Content-Type", "value": "application/xml" }
-      ]
-    },
-    {
-      "source": "/sitemap-static.xml",
       "headers": [
         { "key": "Content-Type", "value": "application/xml" }
       ]
@@ -98,7 +112,7 @@
       ]
     },
     {
-      "source": "/Pages/Product-Pages/Assets/(.*)",
+      "source": "/product-assets/(.*)",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
       ]
