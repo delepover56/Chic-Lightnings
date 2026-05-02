@@ -1223,6 +1223,14 @@ h3 {
     text-transform: uppercase;
 }
 
+.footer-contact .footer-title {
+    color: var(--gold-2);
+}
+
+.footer-contact p:not(.footer-title) {
+    color: var(--text);
+}
+
 .footer-links a,
 .footer-contact a {
     color: var(--text);
@@ -1392,9 +1400,10 @@ h3 {
         height: 58px;
     }
 
-    .nav-toggle {
-        position: static;
-        margin-left: 8px;
+    header.side-nav > .nav-toggle {
+        position: absolute;
+        top: 50%;
+        right: 18px;
         width: 44px;
         height: 44px;
         display: flex !important;
@@ -1402,11 +1411,13 @@ h3 {
         align-items: center;
         justify-content: center;
         gap: 5px;
+        margin: 0;
         background: var(--gold);
         border: 1px solid var(--gold-2);
         border-radius: var(--radius);
         z-index: 1000;
         opacity: 1;
+        transform: translateY(-50%);
         visibility: visible;
     }
 
