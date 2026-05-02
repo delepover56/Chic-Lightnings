@@ -20,6 +20,12 @@
       ]
     },
     {
+      "source": "/sitemap-static.xml",
+      "headers": [
+        { "key": "Content-Type", "value": "application/xml" }
+      ]
+    },
+    {
       "source": "/",
       "headers": [
         { "key": "X-Robots-Tag", "value": "index, follow" }
