@@ -685,6 +685,99 @@ main:has(> .breadcrumb) {
     color: var(--ink);
 }
 
+.seo-intro {
+    padding-top: clamp(48px, 6vw, 82px);
+    padding-bottom: clamp(48px, 6vw, 82px);
+}
+
+.seo-intro-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.95fr) minmax(280px, 0.62fr);
+    gap: clamp(28px, 5vw, 72px);
+    align-items: center;
+}
+
+.seo-intro .section-heading {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.seo-intro .section-heading h2 {
+    max-width: 760px;
+}
+
+.seo-intro .section-heading > p:not(.eyebrow) {
+    max-width: 760px;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.seo-link-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 22px;
+}
+
+.seo-link-row a {
+    min-height: 38px;
+    padding: 9px 13px;
+    display: inline-flex;
+    align-items: center;
+    color: #6f4500;
+    background: rgba(242, 169, 0, 0.12);
+    border: 1px solid rgba(156, 97, 0, 0.16);
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 800;
+}
+
+.seo-link-row a:hover,
+.seo-link-row a:focus-visible {
+    color: var(--ink);
+    background: rgba(242, 169, 0, 0.22);
+}
+
+.seo-intro-media {
+    margin: 0;
+    overflow: hidden;
+    border-radius: var(--radius);
+    box-shadow: 0 22px 54px rgba(72, 49, 19, 0.14);
+}
+
+.seo-intro-media img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    max-height: 520px;
+    object-fit: cover;
+}
+
+.category-seo {
+    padding-top: clamp(38px, 5vw, 70px);
+}
+
+.category-seo .seo-intro-grid {
+    align-items: start;
+}
+
+.category-seo .section-heading > p:not(.eyebrow) {
+    line-height: 1.75;
+}
+
+.category-seo .section-heading > p:not(.eyebrow) + p:not(.eyebrow) {
+    margin-top: 14px;
+}
+
+.category-seo .seo-intro-media img {
+    aspect-ratio: 5 / 4;
+    max-height: 430px;
+}
+
+.category-seo .content-band {
+    margin-top: clamp(26px, 4vw, 46px);
+}
+
 .intro .eyebrow,
 .collections .eyebrow,
 .catalog-section .eyebrow {
@@ -1865,6 +1958,7 @@ main:has(> .breadcrumb) {
     .quote-section,
     .gallery-strip,
     .page-hero,
+    .seo-intro-grid,
     .contact-layout {
         grid-template-columns: 1fr;
     }
@@ -1951,6 +2045,7 @@ main:has(> .breadcrumb) {
     .gallery-grid,
     .story-grid,
     .page-hero,
+    .seo-intro-grid,
     .contact-layout,
     .commerce-slider {
         min-width: 0;
@@ -2038,7 +2133,8 @@ main:has(> .breadcrumb) {
 
     .gallery-copy,
     .gallery-mosaic,
-    .gallery-tile {
+    .gallery-tile,
+    .seo-intro-media {
         width: 100% !important;
         max-width: 340px;
     }
